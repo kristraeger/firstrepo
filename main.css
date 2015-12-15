@@ -17,15 +17,19 @@ body {
   overflow:hidden;
 }
 
-a{
+a {
     text-decoration:none;
     outline:none;
+    color: #fff;
 }
 
+a:hover {
+  color: #F7CAC9;
+}
 
 .main {
-  color:#222; 
-  background:#7e68fb;
+  color:#333; 
+  background:#fff;
   margin:-100px 0 10% 0;   
   padding:10px 30px; 
   font-size:21px; 
@@ -38,7 +42,8 @@ a{
   box-shadow:0 0 0 2px rgba(255,255,255,1); 
   padding:10px 30px; 
   font-size:21px; 
-  font-weight:300; 
+  font-weight:300;
+  position: relative;
 }
 
 .gostWhiteBtn:hover {
@@ -47,48 +52,71 @@ a{
   padding:10px 40px;
 }
 
- .logo {
-     width: 80px;
-     height:80px;
-     background:url("img/initial_white_trans.png") left top no-repeat;
-     display:block;
-     top:0;
-     left:50%;
-     margin-left:-38px;
-     position:absolute;
-     z-index:3;
-     opacity:0; 
+.logo {
+ width: 80px;
+ height:80px;
+ background:url("img/initial_white_trans.png") left top no-repeat;
+ display:block;
+ top:0;
+ left:50%;
+ margin-left:-38px;
+ position:absolute;
+ z-index:3;
+ opacity:0; 
  }
+
+.icons {
+  list-style-type: none;
+  position: relative;
+  padding: 0;
+  margin: auto;
+  top: 0;
+  left: 0;
+  background: none;
+  width: 200px;
+  height: 20px;
+}
+
+.icons li {
+  display: inline;
+}
 
 .btn {
   opacity:0;
 }
+
 .sep { 
-  display:block; height:60%;
+  display:block; 
+  height:60%;
+  margin-bottom: 15px;
 }
+
 #hero {
   position:relative; 
   text-align:center;
 }
+
 .cube span{
     color:#fff;
     display:inline-block;
     }
-.flip{
-    color:#F7CAC9!important;
-    -webkit-transform:rotateY(190deg)!important;
-    -moz-transform:rotateY(190deg)!important;
-    -o-transform:rotateY(190deg)!important;
-    -ms-transform:rotateY(190deg)!important;
-    transform:rotateY(190deg)!important;
-    -webkit-transition: all 800ms 2s ease;
-   -moz-transition: all 800ms 2s ease;
-   -ms-transition: all 800ms 2s ease;
-   -o-transition: all 800ms 2s ease;
-   transition: all 800ms 2s ease;
-    }
+
+.flip {
+  color:#F7CAC9!important;
+  -webkit-transform:rotateY(190deg)!important;
+  -moz-transform:rotateY(190deg)!important;
+  -o-transform:rotateY(190deg)!important;
+  -ms-transform:rotateY(190deg)!important;
+  transform:rotateY(190deg)!important;
+  -webkit-transition: all 800ms 2s ease;
+ -moz-transition: all 800ms 2s ease;
+ -ms-transition: all 800ms 2s ease;
+ -o-transition: all 800ms 2s ease;
+ transition: all 800ms 2s ease;
+}
 
 /* Container box to set the sides relative to */
+
 .cube {
   width: 480px;
   oveflow:hidden;
@@ -110,11 +138,13 @@ a{
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+
 /* The two faces of the cube */
 .default-state,
 .active-state {
   height: 100px;
 }
+
 /* Position the faces */
 .default-state {
   -webkit-transform: translateZ(50px);
@@ -141,9 +171,9 @@ a{
   -ms-transform: rotateX(90deg);
   transform: rotateX(90deg);
 }
+
 /* END CORE CSS */
 /* Demo styling */
-
 
 .cube {
   text-align: center;
@@ -159,7 +189,7 @@ a{
   -o-transition: background 500ms ease;
   transition: background 500ms ease;
 }
-.default-state.on{
+.default-state.on {
   webkit-transition: width 400ms ease;
   -moz-transition: width 400ms ease;
   -o-transition: width 400ms ease;
@@ -173,13 +203,13 @@ a{
   -moz-transition: opacity 400ms 200ms ease;
   -o-transition: opacity 400ms 200ms ease;
   transition: opacity 400ms 200ms ease;
-
-  
 }
+
 .active-state {
   background: rgba(0,0,0,1);
   opacity:0;
 }
+
 .cube.rotateMe .active-state {
    background: rgba(0,0,0,0);
    opacity:1;
@@ -188,7 +218,8 @@ a{
    -o-transition: background 350ms 350ms ease;
    transition: background 350ms 350ms ease;
 }
- #video-container{
+
+ #video-container {
     position: absolute;
     top: 0;
     right: 0;
@@ -201,7 +232,7 @@ a{
     text-align:center;
 }
 
-#video-container > video{
+#video-container > video {
     top: 0;
     left: 0;
     width: 100%;
@@ -209,7 +240,8 @@ a{
     object-fit:cover;
     position:relative;
 }
-#video-container .overlay{
+
+#video-container .overlay {
    width:100%;
    height:100%;
    position:absolute;
@@ -218,7 +250,8 @@ a{
    background:rgba(12,22,40, 0.65);
 
 }
-#video-container .white{
+
+#video-container .white {
    width:100%;
    height:100%;
    position:absolute;
@@ -226,15 +259,16 @@ a{
    left:0;
    background:#FFF;
    z-index:2;
-
 }
-#video-container .white.fade{
+
+#video-container .white.fade {
     width:0;
    -webkit-transition: width 5ms 1350ms ease;
   -moz-transition: width 5ms 1350ms ease;
   -o-transition: width 5ms 1350ms ease;
   transition: width 5ms 1350ms ease;
 }
+
 #video-container p{
    color:#fff;
    position:absolute;
@@ -254,6 +288,7 @@ a{
    position:absolute;
    z-index:100;
 }
+
 .openH{
   width:20px;
   webkit-transition: width 1500ms 2500ms ease!important;
@@ -261,6 +296,7 @@ a{
   -o-transition: width 1500ms 2500ms ease!important;
   transition: width 1500ms 2500ms ease!important;
 }
+
 .openV{
     height:20px;
     webkit-transition: height 1500ms 2500ms ease!important;
