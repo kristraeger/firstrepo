@@ -190,10 +190,10 @@ a:hover {
   transition: background 500ms ease;
 }
 .default-state.on {
-  webkit-transition: width 400ms ease;
-  -moz-transition: width 400ms ease;
-  -o-transition: width 400ms ease;
-  transition: width 400ms ease;
+  webkit-transition: width 800ms ease;
+  -moz-transition: width 800ms ease;
+  -o-transition: width 800ms ease;
+  transition: width 800ms ease;
   width:480px;
 }
 .cube.rotateMe .default-state {
@@ -213,10 +213,10 @@ a:hover {
 .cube.rotateMe .active-state {
    background: rgba(0,0,0,0);
    opacity:1;
-   -webkit-transition: background 350ms 350ms ease;
-   -moz-transition: background 350ms 350ms ease;
-   -o-transition: background 350ms 350ms ease;
-   transition: background 350ms 350ms ease;
+   -webkit-transition: background 600ms 600ms ease;
+   -moz-transition: background 600ms 600ms ease;
+   -o-transition: background 600ms 600ms ease;
+   transition: background 600ms 600ms ease;
 }
 
  #video-container {
