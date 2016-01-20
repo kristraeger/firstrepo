@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-  color: #F7CAC9;
+  color: #4939ed;
 }
 
 .main {
@@ -47,8 +47,8 @@ a:hover {
 }
 
 .gostWhiteBtn:hover {
-  background:#F7CAC9; 
-  color:#333; 
+  background:#4939ed; 
+  color:#fff; 
   padding:10px 40px;
 }
 
@@ -102,7 +102,7 @@ a:hover {
     }
 
 .flip {
-  color:#F7CAC9!important;
+  color:#fff!important;
   -webkit-transform:rotateY(190deg)!important;
   -moz-transform:rotateY(190deg)!important;
   -o-transform:rotateY(190deg)!important;
@@ -181,7 +181,7 @@ a:hover {
 }
 .default-state,
 .active-state {
-  background: #F7CAC9;
+  background: #4939ed;
   color: #fff;
   line-height: 100px;
   -webkit-transition: background 500ms ease;
@@ -197,7 +197,7 @@ a:hover {
   width:480px;
 }
 .cube.rotateMe .default-state {
-  background: #F7CAC9;
+  background: #4939ed;
   opacity:0;
   -webkit-transition: opacity 400ms 200ms ease;
   -moz-transition: opacity 400ms 200ms ease;
